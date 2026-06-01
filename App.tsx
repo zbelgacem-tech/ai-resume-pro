@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { AuthProvider } from '@/contexts/AuthContext';
-import Layout from '@/components/Layout';
+import { ThemeProvider } from './ThemeContext';
+import { AuthProvider } from './AuthContext';
+import Layout from './Layout';
 import Home from '@/pages/Home';
 import Features from '@/pages/Features';
 import Pricing from '@/pages/Pricing';
@@ -12,8 +12,8 @@ import Register from '@/pages/Register';
 import Contact from '@/pages/Contact';
 import Admin from '@/pages/Admin';
 import ResumeBuilder from '@/pages/ResumeBuilder';
-import ProtectedRoute from '@/components/ProtectedRoute';
-import { Toaster } from '@/components/ui/sonner';
+import ProtectedRoute from './ProtectedRoute';
+import { Toaster } from './sonner';
 
 function App() {
   return (
